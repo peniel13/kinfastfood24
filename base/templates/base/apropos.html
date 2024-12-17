@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="about" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center px-4">
+      <!-- Titre de la section -->
+      <h2 class="text-4xl font-semibold text-gray-800 mb-8">À propos de FastFood2kin</h2>
+
+      <!-- Description de la mission de la plateforme -->
+      <p class="text-lg text-gray-600 mb-12">
+          FastFood2kin est une plateforme innovante dédiée à la visibilité des fastfoods de Kinshasa. Son objectif est de permettre à chaque restaurant rapide de la ville d'afficher son menu et ses offres en ligne, facilitant ainsi l'accès aux plats typiques de la ville. Grâce à FastFood2kin, les utilisateurs peuvent explorer les options culinaires disponibles, consulter les prix, et prendre leurs commandes directement depuis chez eux.
+      </p>
+
+      <!-- Image avec du texte à côté -->
+      <div class="flex flex-col lg:flex-row items-center justify-center gap-8 mb-12">
+          <div class="w-full lg:w-1/2">
+              <img src="{% static 'img/fastfood4.jpg' %}" alt="Fast food online" class="w-full rounded-lg shadow-lg">
+          </div>
+          <div class="w-full lg:w-1/2">
+              <h3 class="text-2xl font-semibold text-gray-800 mb-4">Parcourez les fastfoods de Kinshasa depuis chez vous</h3>
+              <p class="text-lg text-gray-600 mb-4">
+                  Vous pouvez explorer une variété de fastfoods de la ville, découvrir leurs plats, comparer les prix et les menus, le tout depuis le confort de votre maison. Vous n'avez plus besoin de sortir pour savourer vos repas préférés : tout est à portée de clic.
+              </p>
+              <p class="text-lg text-gray-600 mb-4">
+                  Que vous soyez à la maison ou au travail, commandez vos repas en ligne, payez et choisissez de récupérer vos plats à l'heure de votre choix, ou même optez pour un service de livraison à domicile.
+              </p>
+          </div>
+      </div>
+
+      <!-- Avantages principaux -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+              <img src="{% static 'img/fastfood2.jpg' %}" alt="Fastfood Icon" class="mb-4">
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">Commandez à l'avance</h4>
+              <p class="text-gray-600 text-center">
+                  Évitez l'attente en commandant vos plats à l'avance. Vous choisissez vos repas, réservez votre créneau horaire et récupérez votre commande en toute tranquillité.
+              </p>
+          </div>
+
+          <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+              <img src="{% static 'img/fastfood.jpg' %}" alt="Fastfood Icon" class="mb-4">
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">Consultez les prix et les menus</h4>
+              <p class="text-gray-600 text-center">
+                  Avant de passer votre commande, explorez le menu complet de chaque fastfood, comparez les prix et découvrez des informations détaillées sur les plats proposés.
+              </p>
+          </div>
+
+          <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+              <img src="{% static 'img/fast3.jpg' %}" alt="Fastfood Icon" class="mb-4">
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">Livraison ou retrait sur place</h4>
+              <p class="text-gray-600 text-center">
+                  Optez pour la livraison à domicile, ou choisissez de récupérer votre commande directement sur place. Vous pouvez sélectionner l'heure qui vous convient le mieux.
+              </p>
+          </div>
+      </div>
+
+      <!-- Appel à l'action -->
+      <div class="mt-12">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Rejoignez FastFood2kin et simplifiez vos repas !</h3>
+          <a href="{% url 'signup' %}" class="inline-block px-8 py-4 text-white bg-blue-600 hover:bg-blue-800 rounded-md font-semibold transition duration-300">
+              Inscrivez-vous maintenant
+          </a>
+      </div>
+  </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="privacy-policy" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center px-4">
+      <!-- Titre de la section -->
+      <h2 class="text-4xl font-semibold text-gray-800 mb-8">Politique de Confidentialité</h2>
+
+      <!-- Introduction -->
+      <p class="text-lg text-gray-600 mb-12">
+          Chez **FastFood2kin**, nous prenons très au sérieux la confidentialité et la sécurité de vos informations personnelles. Nous sommes déterminés à vous offrir une expérience de commande en ligne sûre et fiable, et à protéger vos données personnelles dans le respect de votre vie privée. En tant que plateforme facilitant l'accès aux fastfoods de Kinshasa, nous nous engageons à assurer la sécurité de vos paiements et de vos informations.
+      </p>
+
+      <!-- Logique de Paiement et Sécurité -->
+      <div class="mb-12">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Paiement Sécurisé et Garanties</h3>
+          <p class="text-lg text-gray-600 mb-6">
+              **FastFood2kin** agit comme un intermédiaire sécurisé entre vous et les restaurants partenaires. Lorsque vous effectuez un paiement en ligne, votre argent est réceptionné par **FastFood2kin** avant d'être transféré au restaurant, ce qui nous permet de garantir la sécurité de la transaction. Si un problème survient avec votre commande, vous pouvez contacter notre service client pour résoudre la situation.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+              En cas de litige, nous nous engageons à gérer le problème directement et, si nécessaire, à procéder à un remboursement pour garantir votre satisfaction. Nous veillons à ce que votre expérience de commande soit simple, sûre et transparente, en toute tranquillité d'esprit.
+          </p>
+      </div>
+
+      <!-- Confidentialité des Données -->
+      <div class="mb-12">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Protection de vos Données Personnelles</h3>
+          <p class="text-lg text-gray-600 mb-6">
+              **FastFood2kin** respecte la confidentialité de vos données personnelles. Toutes les informations que vous fournissez lors de votre inscription ou de vos achats sont utilisées exclusivement pour faciliter votre expérience de commande. Nous ne partageons jamais vos informations avec des tiers sans votre consentement explicite.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+              Nous mettons en place des mesures de sécurité robustes pour protéger vos informations contre tout accès non autorisé ou utilisation abusive. Vos données sont stockées de manière sécurisée et sont traitées uniquement dans le cadre de votre utilisation de notre plateforme.
+          </p>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="mt-12">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Votre sécurité est notre priorité</h3>
+          <p class="text-lg text-gray-600 mb-6">
+              Avec **FastFood2kin**, vous pouvez commander vos repas en toute confiance. Nous garantissons la sécurité de vos transactions et la protection de vos informations personnelles. Notre objectif est de rendre votre expérience de commande en ligne aussi simple, rapide et sûre que possible.
+          </p>
+          <a href="{% url 'signup' %}" class="inline-block px-8 py-4 text-white bg-blue-600 hover:bg-blue-800 rounded-md font-semibold transition duration-300">
+              Inscrivez-vous maintenant
+          </a>
+      </div>
+  </div>
+</section>
+{% endblock content %}
